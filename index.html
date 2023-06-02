@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hiển thị danh sách các hãng sản xuất CPU</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post" class="form">
+            <div class="form-row">
+                <label class="form-label" for="ddlDanhsachhangsx">Danh sách Hãng sản xuất CPU:</label>
+                <select id="ddlDanhsachhangsx">
+                    
+                </select>
+            </div>
+
+            <div class="form-row show" id="hang">
+                <label class="form-label" for="txtHang">Hãng:</label>
+                <input type="text" id="txtHang">
+            </div>
+            <div id="error"></div>
+
+            <div class="form-btn">
+                <input class="btn-input" type="button" value="Thêm" id="btnThem" onclick="themHangSX()">
+                <input class="btn-input show" type="button" value="Lưu" id="btnLuu" onclick="luuHangSX()">
+                <input class="btn-input" type="button" value="Huỷ" id="btnHuy" onclick="huy()">
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
